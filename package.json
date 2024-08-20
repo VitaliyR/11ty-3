@@ -1,0 +1,16 @@
+{
+  "name": "11ty-3",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-beta.1"
+  }
+}

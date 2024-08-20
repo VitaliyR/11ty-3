@@ -1,0 +1,8 @@
+node_modules
+.env
+package-lock.json
+_ignore_this
+.git_NOT_IN_USE
+# Local Netlify folder
+.netlify
+_site
