@@ -5,6 +5,7 @@ import { GitContentSource } from "@stackbit/cms-git";
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   ssgName: "eleventy",
+  devCommand: "npx eleventy --serve",
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
