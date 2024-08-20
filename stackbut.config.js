@@ -15,7 +15,7 @@ export default defineStackbitConfig({
           name: "Page",
           type: "page",
           urlPath: "/{slug}",
-          filePath: "nve_content/pages/{slug}.json",
+          filePath: "src/pages/{slug}.json",
           fields: [{ name: "title", type: "string", required: true }],
         },
       ],
