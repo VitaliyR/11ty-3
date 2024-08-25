@@ -1,4 +1,5 @@
 ---
+type: Page
 title: Hello World
 ---
 

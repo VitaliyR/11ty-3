@@ -5,7 +5,7 @@ import { GitContentSource } from "@stackbit/cms-git";
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   ssgName: "eleventy",
-  devCommand: "eleventy --serve --port {{PORT}}",
+  devCommand: "npx @11ty/eleventy --serve",
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
@@ -14,15 +14,15 @@ export default defineStackbitConfig({
         {
           name: "Page",
           type: "page",
-          urlPath: "/{slug}",
-          filePath: "src/pages/{slug}.json",
+          urlPath: "/pages/{slug}",
+          filePath: "src/pages/{slug}.md",
           fields: [{ name: "title", type: "string", required: true }],
         },
       ],
       assetsConfig: {
         referenceType: "static",
         staticDir: "_site",
-        uploadDir: "images",
+        uploadDir: "dist/images",
         publicPath: "/",
       },
     }),
