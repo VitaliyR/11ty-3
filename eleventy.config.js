@@ -7,6 +7,11 @@ export default async function (eleventyConfig) {
     return JSON.stringify(value, null, 2);
   });
 
+  eleventyConfig.setServerOptions({
+    // Show local network IP addresses for device testing
+    showAllHosts: true,
+  });
+
   /* 
      Return your Object options:
   */

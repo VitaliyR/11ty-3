@@ -1,7 +1,7 @@
 ---
 type: Page
 title: Hello World
-slug: /hello/
+slug: hello
 ---
 
 Hello, world!

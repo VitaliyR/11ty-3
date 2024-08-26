@@ -14,4 +14,4 @@ Hello from the **Home Page**.
 
 ## Visual Editor
 
-- [stackbit](http://localhost:8090/_stackbit)
+- [stackbit](http://localhost:8888/_stackbit)
