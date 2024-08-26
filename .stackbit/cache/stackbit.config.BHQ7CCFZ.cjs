@@ -27,7 +27,7 @@ var import_cms_git = require("@stackbit/cms-git");
 var stackbit_config_default = (0, import_types.defineStackbitConfig)({
   stackbitVersion: "~0.6.0",
   ssgName: "eleventy",
-  devCommand: "npx @11ty/eleventy --serve",
+  devCommand: "npx @11ty/eleventy --serve --port 8888",
   contentSources: [
     new import_cms_git.GitContentSource({
       rootPath: "/home/steven/github/collabventures/11ty-3",
@@ -54,4 +54,4 @@ var stackbit_config_default = (0, import_types.defineStackbitConfig)({
     })
   ]
 });
-//# sourceMappingURL=stackbit.config.EALPHU7X.cjs.map
+//# sourceMappingURL=stackbit.config.BHQ7CCFZ.cjs.map
