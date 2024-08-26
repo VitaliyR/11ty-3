@@ -1,4 +1,3 @@
-// stackbit.config.js
 import { defineStackbitConfig } from "@stackbit/types";
 import { GitContentSource } from "@stackbit/cms-git";
 
@@ -9,14 +8,18 @@ export default defineStackbitConfig({
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
-      contentDirs: ["src"],
+      contentDirs: ["content"],
       models: [
         {
           name: "Page",
           type: "page",
-          urlPath: "/pages/{slug}",
-          filePath: "src/pages/{slug}.md",
-          fields: [{ name: "title", type: "string", required: true }],
+          urlPath: "/{slug}",
+          filePath: "content/pages/{slug}.md",
+          fields: [
+            { name: "title", type: "string", required: true },
+            { name: "slug", type: "slug", required: true },
+            { name: "markdown_content", type: "markdown", required: true },
+          ],
         },
       ],
       assetsConfig: {

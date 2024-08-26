@@ -31,14 +31,18 @@ var stackbit_config_default = (0, import_types.defineStackbitConfig)({
   contentSources: [
     new import_cms_git.GitContentSource({
       rootPath: "/home/steven/github/collabventures/11ty-3",
-      contentDirs: ["src"],
+      contentDirs: ["content"],
       models: [
         {
           name: "Page",
           type: "page",
-          urlPath: "/pages/{slug}",
-          filePath: "src/pages/{slug}.md",
-          fields: [{ name: "title", type: "string", required: true }]
+          urlPath: "/{slug}",
+          filePath: "content/pages/{slug}.md",
+          fields: [
+            { name: "title", type: "string", required: true },
+            { name: "slug", type: "slug", required: true },
+            { name: "markdown_content", type: "markdown", required: true }
+          ]
         }
       ],
       assetsConfig: {
@@ -50,4 +54,4 @@ var stackbit_config_default = (0, import_types.defineStackbitConfig)({
     })
   ]
 });
-//# sourceMappingURL=stackbit.config.FE5YIYWK.cjs.map
+//# sourceMappingURL=stackbit.config.EALPHU7X.cjs.map
