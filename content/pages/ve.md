@@ -1,7 +1,7 @@
 ---
 type: Page
 title: visual editor
-slug: /ve/
+slug: /pages/ve/
 ---
 
 Hello from the **visual editor**.
