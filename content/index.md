@@ -16,6 +16,9 @@ Hello from the **Home Page**.
 
 ## Visual Editor
 
-*   [stackbit](http://localhost:8090/_stackbit)
+*   <a href="http://localhost:8090/_stackbit" target="_blank"><http://localhost:8090/\\_stackbit></a>
 
-Modified: 2024-10-10 10:49
+### Now Shortcode
+
+Usage: {% now %}
+Result: {% now %}
