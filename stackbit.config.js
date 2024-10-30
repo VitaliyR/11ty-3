@@ -5,6 +5,11 @@ export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   ssgName: "eleventy",
   devCommand: "npx @11ty/eleventy --serve --port 3000",
+  experimental: {
+    ssg: {
+      proxyWebsockets: true,
+    },
+  },
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
