@@ -5,7 +5,7 @@ export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   nodeVersion: "18",
   ssgName: "eleventy",
-  devCommand: "npx @11ty/eleventy --serve --port 3000",
+  devCommand: "npx @11ty/eleventy --serve --port {PORT}",
   experimental: {
     ssg: {
       proxyWebsockets: true,
