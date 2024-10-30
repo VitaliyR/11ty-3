@@ -9,6 +9,9 @@ export default defineStackbitConfig({
   experimental: {
     ssg: {
       proxyWebsockets: true,
+      logPatterns: {
+        up: ["Server at"],
+      },
     },
   },
   contentSources: [
