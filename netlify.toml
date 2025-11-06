@@ -1,3 +1,6 @@
+[build]
+  command = "npx @11ty/eleventy"
+
 [dev]
   command = "npx @11ty/eleventy --serve --port=3000"
   targetPort = 3000

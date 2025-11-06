@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@stackbit/cms-git": "^1.0.20",
     "@stackbit/types": "^2.1.4"
