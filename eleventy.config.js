@@ -1,6 +1,6 @@
 export default async function (eleventyConfig) {
-  // Copy `dist/` to `_site/dist`
-  eleventyConfig.addPassthroughCopy("dist");
+  // Copy `content/assets/` to `_site/assets`
+  eleventyConfig.addPassthroughCopy({ "content/assets": "assets" });
 
   // Copy '_headers' to '_site/_headers' which is used by netlify dev and Visua Editor
   eleventyConfig.addPassthroughCopy("_headers");
