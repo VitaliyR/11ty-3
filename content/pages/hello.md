@@ -2,6 +2,7 @@
 type: Page
 title: Hello World!
 slug: /pages/hello/
+layout: base.njk
 ---
 1.  Hello, world!
 

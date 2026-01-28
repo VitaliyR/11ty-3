@@ -2,6 +2,7 @@
 type: Page
 title: Home Page
 slug: /
+layout: base.njk
 ---
 Hello from the **Home Page**.
 

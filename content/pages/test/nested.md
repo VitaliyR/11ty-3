@@ -2,6 +2,7 @@
 type: Page
 title: Test Nested Page
 slug: /pages/test/nested/
+layout: base.njk
 ---
 ## Templates
 
